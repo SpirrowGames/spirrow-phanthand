@@ -1,0 +1,12 @@
+# Server settings
+server:
+  host: "0.0.0.0"        # "0.0.0.0" for all interfaces, "127.0.0.1" for local only
+  port: 7300
+
+# Security settings
+security:
+  api_key: "change-me-to-a-strong-secret"   # Bearer token for API authentication
+  allowed_paths:                              # Directories accessible via API
+    - "D:/Projects"
+    - "C:/Dev/my-project"
+  max_file_size_mb: 10                        # Maximum file size for read operations
